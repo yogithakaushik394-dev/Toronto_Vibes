@@ -23,7 +23,7 @@ export default function App() {
     setSearched(true);
 
     try {
-      const res = await fetch("http://localhost:3001/recommend", {
+      const res = await fetch("https://toronto-vibes.onrender.com/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ neighbourhood, vibe }),
